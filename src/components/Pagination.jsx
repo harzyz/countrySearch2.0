@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 function Pagination({ countryPerPage, totalCountries, currentPage, paginate, prePage, nextPage }) {
   const npage = Math.ceil(totalCountries / countryPerPage)
-  // const pageNumbers = [...Array(npage + 1).keys()].slice(1);
 
   const pageNumbers = []
   for(let i = 1; i <= npage; i++){

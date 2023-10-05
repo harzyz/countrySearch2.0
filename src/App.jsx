@@ -33,6 +33,7 @@ function App() {
   // Get current page
   const indexOfLastPost = currentPage * countryPerPage
   const indexOfFirstPost = indexOfLastPost - countryPerPage
+  
   const currentCountry =  countries.filter((country) =>{
     return search.toLocaleLowerCase() === '' ? country : country.name.common.toLocaleLowerCase().includes(search)
   }).slice(indexOfFirstPost, indexOfLastPost)
@@ -42,16 +43,16 @@ function App() {
   const prePage = () => {
     if(currentPage !== indexOfFirstPost){
       setCurrentPage(currentPage - 1)
+      // setCountries(currentCountry)
     }
   }
   const nextPage = () => {
     if(currentPage !== indexOfLastPost){
       setCurrentPage(currentPage + 1)
+      // setCountries(currentCountry)
     }
   }
 
-
-  
   console.log(search)
 
   return (

@@ -1,9 +1,37 @@
+*{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0px !important;
+  background-color: white !important;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0px !important;
+  background-color: whitesmoke !important;
+  border-radius: 0px !important;
+}
+
+::-webkit-scrollbar:horizontal {
+  width: 0px !important;
+  background-color: white !important;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 0px !important;
+  background-color: whitesmoke !important;
+  border-radius: 0px;
+}
 .contain{
   background: #E4E6F1;
   font-family: 'Alkatra', cursive;
   color: white;
   height: 100%;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 .centerSearch{
   display: flex;
